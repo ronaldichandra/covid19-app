@@ -4,5 +4,5 @@
 ## 👉[Download here](https://github.com/ronaldichandra/covid19-app/releases)👈
 
 <br>
-Screenshot:
+## Screenshot:
 <img src="https://raw.githubusercontent.com/ronaldichandra/covid19-app/main/screenshots/ss2.png" width="300">
