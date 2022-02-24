@@ -1,5 +1,5 @@
-name: covid_data
-description: Daily COVID-19 data in Indonesia.
+name: covid_redesign
+description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -29,9 +29,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  covid19:
   http:
-  json_annotation:
   intl:
 
   # The following adds the Cupertino Icons font to your application.
@@ -62,10 +60,10 @@ flutter:
   fonts:
     - family: Product Sans
       fonts:
-        - asset: assets/fonts/PS-bold.ttf
-          weight: 700
         - asset: assets/fonts/PS-regular.ttf
           weight: 500
+        - asset: assets/fonts/PS-bold.ttf
+          weight: 700
         - asset: assets/fonts/PS-italic.ttf
 
   # To add assets to your application, add an assets section, like this:

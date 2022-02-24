@@ -1,6 +1,6 @@
 {
-    "name": "covid_data",
-    "short_name": "covid_data",
+    "name": "covid_redesign",
+    "short_name": "covid_redesign",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

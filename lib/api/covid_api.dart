@@ -1,17 +1,16 @@
-import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:covid_data/model/indonesia_data_model.dart';
+import 'dart:convert';
+import 'indonesia_covid.dart';
 
 class CovidAPI {
-  Future<HomeStats> getIndonesiaData() async {
+  Future<IndonesiaStat> getIndonesiaData() async {
     String url = 'https://data.covid19.go.id/public/api/update.json';
-    final response = await http.get(url);
+    final response = await http.get(Uri.parse(url));
 
     if (response.statusCode == 200) {
-      final jsonRes = json.decode(response.body);
-      return HomeStats.fromJSON(jsonRes);
+      return IndonesiaStat.fromJSON(json.decode(response.body));
     } else {
-      throw Exception("Gagal untuk load");
+      throw Exception('Gagal load');
     }
   }
 }

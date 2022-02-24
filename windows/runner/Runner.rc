@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "covid_data" "\0"
+            VALUE "FileDescription", "covid_redesign" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "covid_data" "\0"
+            VALUE "InternalName", "covid_redesign" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2022 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "covid_data.exe" "\0"
-            VALUE "ProductName", "covid_data" "\0"
+            VALUE "OriginalFilename", "covid_redesign.exe" "\0"
+            VALUE "ProductName", "covid_redesign" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

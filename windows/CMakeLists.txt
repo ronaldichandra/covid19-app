@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
-project(covid_data LANGUAGES CXX)
+project(covid_redesign LANGUAGES CXX)
 
-set(BINARY_NAME "covid_data")
+set(BINARY_NAME "covid_redesign")
 
 cmake_policy(SET CMP0063 NEW)
 
