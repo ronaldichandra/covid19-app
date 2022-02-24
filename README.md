@@ -1,4 +1,4 @@
-# Covid-19 App Indonesia
+# COVID-19 App Indonesia
 A simple COVID-19 tracker app built with Flutter framework. 
 
 👉[Download here](https://github.com/ronaldichandra/covid19-app/releases)👈
