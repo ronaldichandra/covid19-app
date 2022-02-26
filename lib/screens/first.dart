@@ -189,13 +189,13 @@ class _FirstScreenState extends State<FirstScreen> {
                                               padding:
                                                   EdgeInsets.only(right: 20.0),
                                               child: Text(
-                                                '🤒',
+                                                '😄',
                                                 style:
                                                     TextStyle(fontSize: 30.0),
                                               )),
                                           Container(
                                             child: Text(
-                                              'Kasus aktif',
+                                              'Sembuh',
                                               style: TextStyle(
                                                   fontSize: 20.0,
                                                   color: Color(0xff006D3C),
