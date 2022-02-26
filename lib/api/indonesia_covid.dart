@@ -21,7 +21,7 @@ class IndonesiaStat {
       cases: json['update']['total']['jumlah_positif'],
       deaths: json['update']['total']['jumlah_meninggal'],
       recovered: json['update']['total']['jumlah_sembuh'],
-      latestUpdated: json['update']['penambahan']['tanggal'],
+      latestUpdated: json['update']['penambahan']['created'],
       todayCases: json['update']['penambahan']['jumlah_positif'],
       todayDeaths: json['update']['penambahan']['jumlah_meninggal'],
       todayRecovered: json['update']['penambahan']['jumlah_sembuh'],
