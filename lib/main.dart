@@ -1,6 +1,6 @@
 // @dart=2.9
 
-import 'package:covid_redesign/screens/first.dart';
+import 'package:infocovid/screens/first.dart';
 import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
 
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         seconds: 3,
         navigateAfterSeconds: FirstScreen(),
         title: new Text(
-          'Info covID',
+          'Info CovID',
           style: TextStyle(
               fontFamily: 'Product Sans',
               fontSize: 50.0,

@@ -1,5 +1,5 @@
-import 'package:covid_redesign/api/covid_api.dart';
-import 'package:covid_redesign/api/indonesia_covid.dart';
+import 'package:infocovid/api/covid_api.dart';
+import 'package:infocovid/api/indonesia_covid.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:intl/intl.dart';
