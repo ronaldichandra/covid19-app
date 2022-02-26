@@ -29,14 +29,16 @@ class _FirstScreenState extends State<FirstScreen> {
     final f = NumberFormat('#,###,###');
 
     return Scaffold(
-        backgroundColor: Color(0xffffffff),
+        backgroundColor: Color(0xffFDFBFF),
         body: FutureBuilder<IndonesiaStat>(
             future: CovidAPI().getIndonesiaData(),
             builder: (context, snapshot) {
               if (snapshot.connectionState == ConnectionState.waiting) {
                 return Container(
                   child: Center(
-                    child: CircularProgressIndicator(),
+                    child: CircularProgressIndicator(
+                      color: Color(0xff001A43),
+                    ),
                   ),
                 );
               } else {

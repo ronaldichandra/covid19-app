@@ -2,6 +2,7 @@
 
 import 'package:covid_redesign/screens/first.dart';
 import 'package:flutter/material.dart';
+import 'package:splashscreen/splashscreen.dart';
 
 void main(List<String> args) => runApp(MyApp());
 
@@ -12,7 +13,23 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(fontFamily: 'Product Sans'),
-      home: FirstScreen(),
+      home: SplashScreen(
+        seconds: 3,
+        navigateAfterSeconds: FirstScreen(),
+        title: new Text(
+          'Info covID',
+          style: TextStyle(
+              fontFamily: 'Product Sans',
+              fontSize: 50.0,
+              fontWeight: FontWeight.bold),
+        ),
+        backgroundColor: Color(0xffFDFBFF),
+        loaderColor: Color(0xff001A43),
+        loadingText: Text(
+          'Stay safe everyone!',
+          style: TextStyle(fontSize: 20.0),
+        ),
+      ),
     );
   }
 }
