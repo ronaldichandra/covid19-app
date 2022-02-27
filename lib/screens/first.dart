@@ -62,35 +62,41 @@ class _FirstScreenState extends State<FirstScreen> {
                           child: Column(
                             children: [
                               Container(
-                                alignment: Alignment.center,
-                                child: Text(
-                                  'Perkembangan',
-                                  style: TextStyle(
-                                      fontSize: 36.0,
-                                      color: Color(0xff001A43),
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              ),
+                                  alignment: Alignment.center,
+                                  child: FittedBox(
+                                    fit: BoxFit.fitWidth,
+                                    child: Text(
+                                      'Perkembangan',
+                                      style: TextStyle(
+                                          fontSize: 36.0,
+                                          color: Color(0xff001A43),
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  )),
                               Container(
-                                alignment: Alignment.center,
-                                child: Text(
-                                  'COVID-19 Indonesia',
-                                  style: TextStyle(
-                                      fontSize: 36.0,
-                                      color: Color(0xff001A43),
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              ),
+                                  alignment: Alignment.center,
+                                  child: FittedBox(
+                                    fit: BoxFit.fitWidth,
+                                    child: Text(
+                                      'COVID-19 Indonesia',
+                                      style: TextStyle(
+                                          fontSize: 36.0,
+                                          color: Color(0xff001A43),
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  )),
                               Container(
-                                alignment: Alignment.center,
-                                child: Text(
-                                  'Last update: ${snapshot.data!.latestUpdated}',
-                                  style: TextStyle(
-                                      fontSize: 20.0,
-                                      color: Color(0xff001A43),
-                                      fontWeight: FontWeight.normal),
-                                ),
-                              ),
+                                  alignment: Alignment.center,
+                                  child: FittedBox(
+                                    fit: BoxFit.fitWidth,
+                                    child: Text(
+                                      'Last update: ${snapshot.data!.latestUpdated}',
+                                      style: TextStyle(
+                                          fontSize: 20.0,
+                                          color: Color(0xff001A43),
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  )),
                               Container(
                                 alignment: Alignment.centerRight,
                                 child: IconButton(
@@ -302,7 +308,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                 margin:
                                     EdgeInsets.only(top: 20.0, bottom: 70.0),
                                 child: Text(
-                                    'Note: Data harian COVID-19 biasanya update pada pukul sekitar 17.00 WIB'),
+                                    'Note: Data harian COVID-19 biasanya update pada sekitar pukul 17.00 WIB'),
                               ),
                             ],
                           ),
