@@ -131,7 +131,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                 child: FittedBox(
                                   fit: BoxFit.fitWidth,
                                   child: Text(
-                                    'Last update: ${snapshot.data!.latestUpdated}',
+                                    'Last update: ${snapshot.data!.latestUpdated} WIB',
                                     style: TextStyle(
                                         fontSize: 20.0,
                                         color: Color(0xff001A43),
