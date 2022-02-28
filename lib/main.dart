@@ -12,7 +12,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(fontFamily: 'Product Sans'),
+      theme: ThemeData(
+          primaryColor: Color(0xffFDFBFF), fontFamily: 'Product Sans'),
       home: SplashScreen(
         seconds: 3,
         navigateAfterSeconds: FirstScreen(),
