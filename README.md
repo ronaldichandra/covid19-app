@@ -7,7 +7,7 @@
 
 ## API: [covid19.go.id](https://data.covid19.go.id/public/api/update.json)
 
-## 👉[Download here](https://github.com/ronaldichandra/covid19-app/releases/download/1.2.1/app-release.apk) - version 1.2.1 (27-02-2022 | [Changelog](https://github.com/ronaldichandra/covid19-app/releases/tag/1.2.1))
+## 👉[Download here](https://github.com/ronaldichandra/covid19-app/releases/download/1.2.2/app-release.apk) - version 1.2.2 (28-02-2022 | [Changelog](https://github.com/ronaldichandra/covid19-app/releases/tag/1.2.2))
 
 <br>
 
