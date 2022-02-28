@@ -13,4 +13,4 @@
 
 ## Screenshot:
 
-<img src="https://raw.githubusercontent.com/ronaldichandra/covid19-app/main/screenshots/ss4.png" width="300">
+<img src="https://raw.githubusercontent.com/ronaldichandra/covid19-app/main/screenshots/ss5.png" width="300">
