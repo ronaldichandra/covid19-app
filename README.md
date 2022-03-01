@@ -1,4 +1,4 @@
-# COVID-19 App Indonesia
+# COVID-19 Tracker App Indonesia
 
 [![Github All Releases](https://img.shields.io/github/downloads/ronaldichandra/covid19-app/total.svg)]()
 ![](https://img.shields.io/github/stars/ronaldichandra/covid19-app)
