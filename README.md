@@ -12,5 +12,7 @@
 <br>
 
 ## Screenshot:
-
-<img src="https://raw.githubusercontent.com/ronaldichandra/covid19-app/main/screenshots/ss5.png" width="300">
+<p float="left">
+  <img src="https://raw.githubusercontent.com/ronaldichandra/covid19-app/main/screenshots/ss1.png" width="200">
+  <img src="https://raw.githubusercontent.com/ronaldichandra/covid19-app/main/screenshots/ss2.png" width="200">
+</p>
