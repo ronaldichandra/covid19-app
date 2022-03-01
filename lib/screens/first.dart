@@ -29,7 +29,6 @@ class _FirstScreenState extends State<FirstScreen> {
     final f = NumberFormat('#,###,###');
 
     return Scaffold(
-      backgroundColor: Color(0xffFDFBFF),
       body: FutureBuilder<IndonesiaStat>(
           future: CovidAPI().getIndonesiaData(),
           builder: (context, snapshot) {
@@ -79,7 +78,7 @@ class _FirstScreenState extends State<FirstScreen> {
               return Container(
                 child: Center(
                   child: CircularProgressIndicator(
-                    color: Color(0xff001A43),
+                    color: Theme.of(context).colorScheme.onPrimary,
                   ),
                 ),
               );
@@ -93,7 +92,7 @@ class _FirstScreenState extends State<FirstScreen> {
                           bottomRight: Radius.circular(40.0)),
                       child: Container(
                         height: 300.0,
-                        color: Color(0xffACC7FF),
+                        color: Theme.of(context).primaryColor,
                       ),
                     ),
                     Container(
@@ -106,13 +105,10 @@ class _FirstScreenState extends State<FirstScreen> {
                                 alignment: Alignment.center,
                                 child: FittedBox(
                                   fit: BoxFit.fitWidth,
-                                  child: Text(
-                                    'Perkembangan',
-                                    style: TextStyle(
-                                        fontSize: 36.0,
-                                        color: Color(0xff001A43),
-                                        fontWeight: FontWeight.bold),
-                                  ),
+                                  child: Text('Perkembangan',
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .headline1),
                                 )),
                             Container(
                                 alignment: Alignment.center,
@@ -120,10 +116,8 @@ class _FirstScreenState extends State<FirstScreen> {
                                   fit: BoxFit.fitWidth,
                                   child: Text(
                                     'COVID-19 Indonesia',
-                                    style: TextStyle(
-                                        fontSize: 36.0,
-                                        color: Color(0xff001A43),
-                                        fontWeight: FontWeight.bold),
+                                    style:
+                                        Theme.of(context).textTheme.headline1,
                                   ),
                                 )),
                             Container(
@@ -132,10 +126,8 @@ class _FirstScreenState extends State<FirstScreen> {
                                   fit: BoxFit.fitWidth,
                                   child: Text(
                                     'Last update: ${snapshot.data!.latestUpdated} WIB',
-                                    style: TextStyle(
-                                        fontSize: 20.0,
-                                        color: Color(0xff001A43),
-                                        fontWeight: FontWeight.normal),
+                                    style:
+                                        Theme.of(context).textTheme.bodyText1,
                                   ),
                                 )),
                             Container(
@@ -162,7 +154,9 @@ class _FirstScreenState extends State<FirstScreen> {
                             ClipRRect(
                               borderRadius: BorderRadius.circular(16.0),
                               child: Container(
-                                color: Color(0xffFFDCC3),
+                                color: Theme.of(context)
+                                    .colorScheme
+                                    .primaryContainer,
                                 child: Padding(
                                   padding: const EdgeInsets.only(
                                       top: 18.0, left: 14.0, bottom: 18.0),
@@ -180,7 +174,9 @@ class _FirstScreenState extends State<FirstScreen> {
                                           'Kasus aktif',
                                           style: TextStyle(
                                               fontSize: 20.0,
-                                              color: Color(0xff944B00),
+                                              color: Theme.of(context)
+                                                  .colorScheme
+                                                  .onPrimaryContainer,
                                               fontWeight: FontWeight.bold),
                                         ),
                                       ),
@@ -190,7 +186,9 @@ class _FirstScreenState extends State<FirstScreen> {
                                           '${f.format(snapshot.data?.cases)}',
                                           style: TextStyle(
                                               fontSize: 50.0,
-                                              color: Color(0xff944B00),
+                                              color: Theme.of(context)
+                                                  .colorScheme
+                                                  .onPrimaryContainer,
                                               fontWeight: FontWeight.bold),
                                         ),
                                       ),
@@ -202,13 +200,17 @@ class _FirstScreenState extends State<FirstScreen> {
                                               '${f.format(snapshot.data?.todayCases)}',
                                               style: TextStyle(
                                                   fontSize: 20.0,
-                                                  color: Color(0xff944B00),
+                                                  color: Theme.of(context)
+                                                      .colorScheme
+                                                      .onPrimaryContainer,
                                                   fontWeight:
                                                       FontWeight.normal),
                                             ),
                                             Icon(
                                               Icons.arrow_upward,
-                                              color: Color(0xff944B00),
+                                              color: Theme.of(context)
+                                                  .colorScheme
+                                                  .onPrimaryContainer,
                                             )
                                           ],
                                         ),
@@ -223,7 +225,9 @@ class _FirstScreenState extends State<FirstScreen> {
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(16.0),
                                 child: Container(
-                                  color: Color(0xff97F7B8),
+                                  color: Theme.of(context)
+                                      .colorScheme
+                                      .secondaryContainer,
                                   child: Padding(
                                     padding: const EdgeInsets.only(
                                         top: 18.0, left: 14.0, bottom: 18.0),
@@ -242,7 +246,9 @@ class _FirstScreenState extends State<FirstScreen> {
                                             'Sembuh',
                                             style: TextStyle(
                                                 fontSize: 20.0,
-                                                color: Color(0xff006D3C),
+                                                color: Theme.of(context)
+                                                    .colorScheme
+                                                    .onSecondaryContainer,
                                                 fontWeight: FontWeight.bold),
                                           ),
                                         ),
@@ -252,7 +258,9 @@ class _FirstScreenState extends State<FirstScreen> {
                                             '${f.format(snapshot.data?.recovered)}',
                                             style: TextStyle(
                                                 fontSize: 50.0,
-                                                color: Color(0xff006D3C),
+                                                color: Theme.of(context)
+                                                    .colorScheme
+                                                    .onSecondaryContainer,
                                                 fontWeight: FontWeight.bold),
                                           ),
                                         ),
@@ -264,13 +272,17 @@ class _FirstScreenState extends State<FirstScreen> {
                                                 '${f.format(snapshot.data?.todayRecovered)}',
                                                 style: TextStyle(
                                                     fontSize: 20.0,
-                                                    color: Color(0xff006D3C),
+                                                    color: Theme.of(context)
+                                                        .colorScheme
+                                                        .onSecondaryContainer,
                                                     fontWeight:
                                                         FontWeight.normal),
                                               ),
                                               Icon(
                                                 Icons.arrow_upward,
-                                                color: Color(0xff006D3C),
+                                                color: Theme.of(context)
+                                                    .colorScheme
+                                                    .onSecondaryContainer,
                                               )
                                             ],
                                           ),
@@ -284,7 +296,7 @@ class _FirstScreenState extends State<FirstScreen> {
                             ClipRRect(
                               borderRadius: BorderRadius.circular(16.0),
                               child: Container(
-                                color: Color(0xffFFDAD3),
+                                color: Theme.of(context).colorScheme.secondary,
                                 child: Padding(
                                   padding: const EdgeInsets.only(
                                       top: 18.0, left: 14.0, bottom: 18.0),
@@ -302,7 +314,9 @@ class _FirstScreenState extends State<FirstScreen> {
                                           'Meninggal',
                                           style: TextStyle(
                                               fontSize: 20.0,
-                                              color: Color(0xffC10000),
+                                              color: Theme.of(context)
+                                                  .colorScheme
+                                                  .onSecondary,
                                               fontWeight: FontWeight.bold),
                                         ),
                                       ),
@@ -312,7 +326,9 @@ class _FirstScreenState extends State<FirstScreen> {
                                           '${f.format(snapshot.data?.deaths)}',
                                           style: TextStyle(
                                               fontSize: 50.0,
-                                              color: Color(0xffC10000),
+                                              color: Theme.of(context)
+                                                  .colorScheme
+                                                  .onSecondary,
                                               fontWeight: FontWeight.bold),
                                         ),
                                       ),
@@ -324,13 +340,17 @@ class _FirstScreenState extends State<FirstScreen> {
                                               '${f.format(snapshot.data?.todayDeaths)}',
                                               style: TextStyle(
                                                   fontSize: 20.0,
-                                                  color: Color(0xffC10000),
+                                                  color: Theme.of(context)
+                                                      .colorScheme
+                                                      .onSecondary,
                                                   fontWeight:
                                                       FontWeight.normal),
                                             ),
                                             Icon(
                                               Icons.arrow_upward,
-                                              color: Color(0xffC10000),
+                                              color: Theme.of(context)
+                                                  .colorScheme
+                                                  .onSecondary,
                                             )
                                           ],
                                         ),
@@ -359,10 +379,10 @@ class _FirstScreenState extends State<FirstScreen> {
         onPressed: () {
           launchUrl();
         },
-        backgroundColor: Color(0xffACC7FF),
-        child: const Icon(
+        backgroundColor: Theme.of(context).primaryColor,
+        child: Icon(
           FontAwesome.github,
-          color: Color(0xff001A43),
+          color: Theme.of(context).hintColor,
         ),
       ),
     );
